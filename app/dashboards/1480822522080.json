@@ -1,7 +1,7 @@
 {
   "id": null,
   "title": "新竹市消防局勤務派遣科｜g0v | 新竹市中度以上急救責任醫院急診即時訊息",
-  "originalTitle": "新竹市消防局勤務派遣科｜新竹市急救責任醫院急診即時訊息",
+  "originalTitle": "新竹市消防局勤務派遣科｜g0v | 新竹市中度以上急救責任醫院急診即時訊息",
   "tags": [],
   "style": "dark",
   "timezone": "browser",
@@ -11,7 +11,7 @@
   "rows": [
     {
       "title": "滿床變化",
-      "height": "300px",
+      "height": "200px",
       "editable": true,
       "collapse": false,
       "collapsable": true,
@@ -23,7 +23,7 @@
           "datasource": null,
           "renderer": "flot",
           "x-axis": true,
-          "y-axis": true,
+          "y-axis": false,
           "scale": 1,
           "y_formats": [
             "none",
@@ -69,7 +69,7 @@
           "tooltip": {
             "value_type": "individual",
             "query_as_alias": true,
-            "shared": false
+            "shared": true
           },
           "targets": [
             {
@@ -118,7 +118,7 @@
           "datasource": null,
           "renderer": "flot",
           "x-axis": true,
-          "y-axis": true,
+          "y-axis": false,
           "scale": 1,
           "y_formats": [
             "none",
@@ -166,7 +166,7 @@
           "tooltip": {
             "value_type": "cumulative",
             "query_as_alias": true,
-            "shared": false
+            "shared": true
           },
           "targets": [
             {
@@ -204,7 +204,7 @@
             }
           ],
           "aliasColors": {},
-          "title": "新竹台大",
+          "title": "台大",
           "id": 23,
           "seriesOverrides": [],
           "links": []
@@ -216,7 +216,7 @@
           "datasource": null,
           "renderer": "flot",
           "x-axis": true,
-          "y-axis": true,
+          "y-axis": false,
           "scale": 1,
           "y_formats": [
             "none",
@@ -259,7 +259,7 @@
           "tooltip": {
             "value_type": "individual",
             "query_as_alias": true,
-            "shared": false
+            "shared": true
           },
           "targets": [
             {
@@ -275,7 +275,7 @@
             }
           ],
           "aliasColors": {},
-          "title": "新竹市急診滿床已通報119",
+          "title": "急診滿床已通報119",
           "id": 6,
           "seriesOverrides": [],
           "links": []
@@ -287,7 +287,7 @@
           "type": "text",
           "loadingEditor": false,
           "mode": "markdown",
-          "content": "新竹市消防局\n\n勤務派遣科 專用版\n\n*各醫院更新資料速度不同，本站每 20 分鐘抓取一次，請自行向各醫院確認。*\n\n急診即時資訊是以「現狀 (AS IS)」被提供出來，並不附隨著任何明示或默示的保證。在任何的情況下，本站都不會因為任何的要求、損害賠償或其他可歸責事由而來承擔責任。",
+          "content": "新竹市消防局勤務派遣科 專用版\n\n急診即時資訊是以「現狀 (AS IS)」被提供出來，並不附隨著任何明示或默示的保證。在任何的情況下，本站都不會因為任何的要求、損害賠償或其他可歸責事由而來承擔責任。",
           "style": {},
           "title": "說明",
           "id": 8,
@@ -300,7 +300,7 @@
           "datasource": null,
           "renderer": "flot",
           "x-axis": true,
-          "y-axis": true,
+          "y-axis": false,
           "scale": 1,
           "y_formats": [
             "none",
@@ -347,7 +347,7 @@
           "tooltip": {
             "value_type": "cumulative",
             "query_as_alias": true,
-            "shared": false
+            "shared": true
           },
           "targets": [
             {
@@ -397,7 +397,7 @@
           "datasource": null,
           "renderer": "flot",
           "x-axis": true,
-          "y-axis": true,
+          "y-axis": false,
           "scale": 1,
           "y_formats": [
             "none",
@@ -444,7 +444,7 @@
           "tooltip": {
             "value_type": "cumulative",
             "query_as_alias": true,
-            "shared": false
+            "shared": true
           },
           "targets": [
             {
@@ -482,7 +482,7 @@
             }
           ],
           "aliasColors": {},
-          "title": "新竹國泰",
+          "title": "國泰",
           "id": 25,
           "seriesOverrides": [],
           "links": []
@@ -494,7 +494,7 @@
           "datasource": null,
           "renderer": "flot",
           "x-axis": true,
-          "y-axis": true,
+          "y-axis": false,
           "scale": 1,
           "y_formats": [
             "none",
@@ -541,7 +541,7 @@
           "tooltip": {
             "value_type": "cumulative",
             "query_as_alias": true,
-            "shared": false
+            "shared": true
           },
           "targets": [
             {
