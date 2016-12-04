@@ -17,7 +17,7 @@
       "collapsable": true,
       "panels": [
         {
-          "span": 2,
+          "span": 3,
           "editable": true,
           "type": "graph",
           "datasource": null,
@@ -69,7 +69,7 @@
           "tooltip": {
             "value_type": "individual",
             "query_as_alias": true,
-            "shared": true
+            "shared": false
           },
           "targets": [
             {
@@ -112,7 +112,7 @@
           "links": []
         },
         {
-          "span": 5,
+          "span": 4,
           "editable": true,
           "type": "graph",
           "datasource": null,
@@ -210,7 +210,7 @@
           "links": []
         },
         {
-          "span": 3,
+          "span": 2,
           "editable": true,
           "type": "graph",
           "datasource": null,
@@ -282,7 +282,7 @@
         },
         {
           "error": false,
-          "span": 2,
+          "span": 3,
           "editable": true,
           "type": "text",
           "loadingEditor": false,
@@ -294,7 +294,7 @@
           "links": []
         },
         {
-          "span": 5,
+          "span": 4,
           "editable": true,
           "type": "graph",
           "datasource": null,
@@ -391,7 +391,7 @@
           "links": []
         },
         {
-          "span": 5,
+          "span": 4,
           "editable": true,
           "type": "graph",
           "datasource": null,
@@ -488,7 +488,7 @@
           "links": []
         },
         {
-          "span": 5,
+          "span": 4,
           "editable": true,
           "type": "graph",
           "datasource": null,
