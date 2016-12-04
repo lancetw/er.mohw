@@ -70,7 +70,7 @@ function (Settings) {
     },
 
     // default start dashboard
-    default_route: '/dashboard/file/all.json',
+    default_route: '/dashboard/file/1480822522080.json',
 
     // set to false to disable unsaved changes warning
     unsaved_changes_warning: true,
