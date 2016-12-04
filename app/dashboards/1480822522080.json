@@ -1,6 +1,6 @@
 {
   "id": null,
-  "title": "新竹市消防局勤務派遣科｜新竹市急救責任醫院急診即時訊息",
+  "title": "新竹市消防局勤務派遣科｜g0v | 新竹市中度以上急救責任醫院急診即時訊息",
   "originalTitle": "新竹市消防局勤務派遣科｜新竹市急救責任醫院急診即時訊息",
   "tags": [],
   "style": "dark",
@@ -78,7 +78,7 @@
               "series": "ER.[[hospital]]",
               "query": "select  last(pending_bed) from /ER\\.(0412040012|1533050039|1112010519|1112010528)/  where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "$hospital_name['$1'] 等急診推床",
+              "alias": "$hospital_name['$1'] 等急診推床人數",
               "rawQuery": true,
               "hide": false
             },
@@ -88,7 +88,7 @@
               "series": "ER.[[hospital]]",
               "query": "select  last(pending_icu) from /ER\\.(0412040012|1533050039|1112010519|1112010528)/  where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "$hospital_name['$1'] 等加護病房",
+              "alias": "$hospital_name['$1'] 等加護病房人數",
               "rawQuery": true,
               "hide": false
             },
@@ -98,7 +98,7 @@
               "series": "ER.[[hospital]]",
               "query": "select  last(pending_ward) from /ER\\.(0412040012|1533050039|1112010519|1112010528)/  where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "$hospital_name['$1'] 等病房",
+              "alias": "$hospital_name['$1'] 等病房人數",
               "rawQuery": true,
               "hide": false
             }
@@ -175,7 +175,7 @@
               "series": "ER.0412040012",
               "query": "select last(pending_bed) from \"ER.0412040012\" where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "等急診推床"
+              "alias": "等急診推床人數"
             },
             {
               "function": "last",
@@ -183,7 +183,7 @@
               "series": "ER.0412040012",
               "query": "select last(pending_icu) from \"ER.0412040012\" where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "等待加護病房"
+              "alias": "等加護病房人數"
             },
             {
               "function": "last",
@@ -191,7 +191,7 @@
               "series": "ER.0412040012",
               "query": "select last(pending_ward) from \"ER.0412040012\" where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "等待病房",
+              "alias": "等病房人數",
               "rawQuery": false
             },
             {
@@ -200,7 +200,7 @@
               "series": "ER.0412040012",
               "query": "select last(pending_doctor) from \"ER.0412040012\" where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "等待看診"
+              "alias": "等看診人數"
             }
           ],
           "aliasColors": {},
@@ -275,7 +275,7 @@
             }
           ],
           "aliasColors": {},
-          "title": "新竹市急診已滿床通報",
+          "title": "新竹市急診滿床已通報119",
           "id": 6,
           "seriesOverrides": [],
           "links": []
@@ -287,7 +287,7 @@
           "type": "text",
           "loadingEditor": false,
           "mode": "markdown",
-          "content": "新竹市消防局勤務派遣科 專用\n\n*各醫院更新資料速度不同，本站每 20 分鐘抓取一次，請自行向各醫院確認。*\n\n急診即時資訊是以「現狀 (AS IS)」被提供出來，並不附隨著任何明示或默示的保證。在任何的情況下，本站都不會因為任何的要求、損害賠償或其他可歸責事由而來承擔責任。",
+          "content": "新竹市消防局\n\n勤務派遣科 專用版\n\n*各醫院更新資料速度不同，本站每 20 分鐘抓取一次，請自行向各醫院確認。*\n\n急診即時資訊是以「現狀 (AS IS)」被提供出來，並不附隨著任何明示或默示的保證。在任何的情況下，本站都不會因為任何的要求、損害賠償或其他可歸責事由而來承擔責任。",
           "style": {},
           "title": "說明",
           "id": 8,
@@ -356,7 +356,7 @@
               "series": "ER.1112010519",
               "query": "select last(pending_bed) from \"ER.1112010519\" where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "等急診推床"
+              "alias": "等急診推床人數"
             },
             {
               "function": "last",
@@ -364,7 +364,7 @@
               "series": "ER.1112010519",
               "query": "select last(pending_icu) from \"ER.1112010519\" where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "等待加護病房"
+              "alias": "等加護病房人數"
             },
             {
               "function": "last",
@@ -372,7 +372,7 @@
               "series": "ER.1112010519",
               "query": "select last(pending_ward) from \"ER.1112010519\" where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "等待病房",
+              "alias": "等病房人數",
               "rawQuery": false
             },
             {
@@ -381,7 +381,7 @@
               "series": "ER.1112010519",
               "query": "select last(pending_doctor) from \"ER.1112010519\" where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "等待看診"
+              "alias": "等看診人數"
             }
           ],
           "aliasColors": {},
@@ -453,7 +453,7 @@
               "series": "ER.1112010528",
               "query": "select last(pending_bed) from \"ER.1112010528\" where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "等急診推床"
+              "alias": "等急診推床人數"
             },
             {
               "function": "last",
@@ -461,7 +461,7 @@
               "series": "ER.1112010528",
               "query": "select last(pending_icu) from \"ER.1112010528\" where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "等待加護病房"
+              "alias": "等加護病房人數"
             },
             {
               "function": "last",
@@ -469,7 +469,7 @@
               "series": "ER.1112010528",
               "query": "select last(pending_ward) from \"ER.1112010528\" where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "等待病房",
+              "alias": "等病房人數",
               "rawQuery": false
             },
             {
@@ -478,7 +478,7 @@
               "series": "ER.1112010528",
               "query": "select last(pending_doctor) from \"ER.1112010528\" where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "等待看診"
+              "alias": "等看診人數"
             }
           ],
           "aliasColors": {},
@@ -550,7 +550,7 @@
               "series": "ER.1533050039",
               "query": "select last(pending_bed) from \"ER.1533050039\" where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "等急診推床"
+              "alias": "等急診推床人數"
             },
             {
               "function": "last",
@@ -558,7 +558,7 @@
               "series": "ER.1533050039",
               "query": "select last(pending_icu) from \"ER.1533050039\" where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "等待加護病房"
+              "alias": "等加護病房人數"
             },
             {
               "function": "last",
@@ -566,7 +566,7 @@
               "series": "ER.1533050039",
               "query": "select last(pending_ward) from \"ER.1533050039\" where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "等待病房",
+              "alias": "等病房人數",
               "rawQuery": false
             },
             {
@@ -575,7 +575,7 @@
               "series": "ER.1533050039",
               "query": "select last(pending_doctor) from \"ER.1533050039\" where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "等待看診"
+              "alias": "等看診人數"
             }
           ],
           "aliasColors": {},
