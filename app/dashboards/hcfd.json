@@ -1,7 +1,7 @@
 {
   "id": null,
   "title": "新竹市消防局 勤務派遣科｜g0v | 新竹市中度級以上急救責任醫院急診即時資訊彙整",
-  "originalTitle": "新竹市消防局勤務派遣科｜g0v | 新竹市中度級以上急救責任醫院急診即時訊息",
+  "originalTitle": "新竹市消防局 勤務派遣科｜g0v | 新竹市中度級以上急救責任醫院急診即時資訊彙整",
   "tags": [],
   "style": "dark",
   "timezone": "browser",
@@ -154,19 +154,11 @@
           "targets": [
             {
               "function": "last",
-              "column": "pending_bed",
+              "column": "pending_doctor",
               "series": "ER.0412040012",
-              "query": "select last(pending_bed) from \"ER.0412040012\" where $timeFilter group by time($interval) order asc",
+              "query": "select last(pending_doctor) from \"ER.0412040012\" where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "等急診推床人數"
-            },
-            {
-              "function": "last",
-              "column": "pending_icu",
-              "series": "ER.0412040012",
-              "query": "select last(pending_icu) from \"ER.0412040012\" where $timeFilter group by time($interval) order asc",
-              "interval": "1h",
-              "alias": "等加護病房人數"
+              "alias": "等看診人數"
             },
             {
               "function": "last",
@@ -179,11 +171,19 @@
             },
             {
               "function": "last",
-              "column": "pending_doctor",
+              "column": "pending_icu",
               "series": "ER.0412040012",
-              "query": "select last(pending_doctor) from \"ER.0412040012\" where $timeFilter group by time($interval) order asc",
+              "query": "select last(pending_icu) from \"ER.0412040012\" where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "等看診人數"
+              "alias": "等加護病房人數"
+            },
+            {
+              "function": "last",
+              "column": "pending_bed",
+              "series": "ER.0412040012",
+              "query": "select last(pending_bed) from \"ER.0412040012\" where $timeFilter group by time($interval) order asc",
+              "interval": "1h",
+              "alias": "等急診推床人數"
             }
           ],
           "aliasColors": {},
@@ -252,19 +252,11 @@
           "targets": [
             {
               "function": "last",
-              "column": "pending_bed",
+              "column": "pending_doctor",
               "series": "ER.1112010519",
-              "query": "select last(pending_bed) from \"ER.1112010519\" where $timeFilter group by time($interval) order asc",
+              "query": "select last(pending_doctor) from \"ER.1112010519\" where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "等急診推床人數"
-            },
-            {
-              "function": "last",
-              "column": "pending_icu",
-              "series": "ER.1112010519",
-              "query": "select last(pending_icu) from \"ER.1112010519\" where $timeFilter group by time($interval) order asc",
-              "interval": "1h",
-              "alias": "等加護病房人數"
+              "alias": "等看診人數"
             },
             {
               "function": "last",
@@ -277,11 +269,19 @@
             },
             {
               "function": "last",
-              "column": "pending_doctor",
+              "column": "pending_icu",
               "series": "ER.1112010519",
-              "query": "select last(pending_doctor) from \"ER.1112010519\" where $timeFilter group by time($interval) order asc",
+              "query": "select last(pending_icu) from \"ER.1112010519\" where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "等看診人數"
+              "alias": "等加護病房人數"
+            },
+            {
+              "function": "last",
+              "column": "pending_bed",
+              "series": "ER.1112010519",
+              "query": "select last(pending_bed) from \"ER.1112010519\" where $timeFilter group by time($interval) order asc",
+              "interval": "1h",
+              "alias": "等急診推床人數"
             }
           ],
           "aliasColors": {},
@@ -349,19 +349,11 @@
           "targets": [
             {
               "function": "last",
-              "column": "pending_bed",
+              "column": "pending_doctor",
               "series": "ER.1112010528",
-              "query": "select last(pending_bed) from \"ER.1112010528\" where $timeFilter group by time($interval) order asc",
+              "query": "select last(pending_doctor) from \"ER.1112010528\" where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "等急診推床人數"
-            },
-            {
-              "function": "last",
-              "column": "pending_icu",
-              "series": "ER.1112010528",
-              "query": "select last(pending_icu) from \"ER.1112010528\" where $timeFilter group by time($interval) order asc",
-              "interval": "1h",
-              "alias": "等加護病房人數"
+              "alias": "等看診人數"
             },
             {
               "function": "last",
@@ -374,11 +366,19 @@
             },
             {
               "function": "last",
-              "column": "pending_doctor",
+              "column": "pending_icu",
               "series": "ER.1112010528",
-              "query": "select last(pending_doctor) from \"ER.1112010528\" where $timeFilter group by time($interval) order asc",
+              "query": "select last(pending_icu) from \"ER.1112010528\" where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "等看診人數"
+              "alias": "等加護病房人數"
+            },
+            {
+              "function": "last",
+              "column": "pending_bed",
+              "series": "ER.1112010528",
+              "query": "select last(pending_bed) from \"ER.1112010528\" where $timeFilter group by time($interval) order asc",
+              "interval": "1h",
+              "alias": "等急診推床人數"
             }
           ],
           "aliasColors": {},
@@ -446,19 +446,11 @@
           "targets": [
             {
               "function": "last",
-              "column": "pending_bed",
+              "column": "pending_doctor",
               "series": "ER.1533050039",
-              "query": "select last(pending_bed) from \"ER.1533050039\" where $timeFilter group by time($interval) order asc",
+              "query": "select last(pending_doctor) from \"ER.1533050039\" where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "等急診推床人數"
-            },
-            {
-              "function": "last",
-              "column": "pending_icu",
-              "series": "ER.1533050039",
-              "query": "select last(pending_icu) from \"ER.1533050039\" where $timeFilter group by time($interval) order asc",
-              "interval": "1h",
-              "alias": "等加護病房人數"
+              "alias": "等看診人數"
             },
             {
               "function": "last",
@@ -471,11 +463,19 @@
             },
             {
               "function": "last",
-              "column": "pending_doctor",
+              "column": "pending_icu",
               "series": "ER.1533050039",
-              "query": "select last(pending_doctor) from \"ER.1533050039\" where $timeFilter group by time($interval) order asc",
+              "query": "select last(pending_icu) from \"ER.1533050039\" where $timeFilter group by time($interval) order asc",
               "interval": "1h",
-              "alias": "等看診人數"
+              "alias": "等加護病房人數"
+            },
+            {
+              "function": "last",
+              "column": "pending_bed",
+              "series": "ER.1533050039",
+              "query": "select last(pending_bed) from \"ER.1533050039\" where $timeFilter group by time($interval) order asc",
+              "interval": "1h",
+              "alias": "等急診推床人數"
             }
           ],
           "aliasColors": {},
